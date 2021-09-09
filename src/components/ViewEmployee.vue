@@ -59,6 +59,7 @@ export default {
   },
   methods: {
     fetchData() {
+      alert('hello');
       db.collection("employees")
         .where("employeeID", "==", this.$route.params.employee_id)
         .get()
